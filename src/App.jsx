@@ -3,12 +3,17 @@ import { memo } from 'react';
 const aj="holaa";
 const dj="lola";
 
+const clickhandler=()=>{
+  alert("Hello")
+}
 
+const wrappHandler=()=>{
+  clickhandler("hello");
+}
 const App = () => {
+  
   return(
-    <div>
-      <h2>hello</h2>
-    </div>
+    <button onClick={wrappHandler}>click</button>
   );
 };
 
