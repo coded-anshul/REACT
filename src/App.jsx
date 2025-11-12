@@ -3,8 +3,8 @@ import { memo } from 'react';
 const aj="holaa";
 const dj="lola";
 
-const clickhandler=()=>{
-  alert("Hello")
+const clickhandler=(msg)=>{
+  alert(msg)
 }
 
 const wrappHandler=()=>{
@@ -12,7 +12,7 @@ const wrappHandler=()=>{
 }
 const App = () => {
   
-  return(
+  return( 
     <button onClick={wrappHandler}>click</button>
   );
 };
